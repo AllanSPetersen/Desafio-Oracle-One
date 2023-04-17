@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_img">
+                <img src="./svgs/logo.svg" alt="Logo da Alura">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="encriptador">
+                <form class="encriptador_form">
+                    <div class="areaTexto">
+                        <textarea name="areaTexto" id="texto" placeholder="Digite seu texto" required></textarea>
+                        <div class="informacoes">
+                            <div class="info">
+                                <img src="./svgs/info.svg" alt="">
+                                <p id="aviso">Apenas letras minúsculas e sem acento.</p>
+                            </div>
+                            <div class="botoes">
+                                <input id="criptografa" type="button" value="Criptografar">
+                                <input id="descriptografa" type="button" value="Descriptografar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="segundoTexto">
+                    <div class="out_content">
+                        <div class="content" id="padrao">
+                            <div class="imagemTexto">
+                                <img src="./svgs/avatar.svg" alt="Imagen de animada">
+                            </div><p>Nenhuma mensagem encontrada</p>
+                            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                        </div>
+                        <div class = "content invisivel" id="resultado">
+                            <textarea name="leiaTexto" id="texto_o" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© 2023 Todos os direitos reservados a Állan Petersen | One Oracle </p>
+        <a href="https://www.linkedin.com/in/allan-petersen-448552238/" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" class="pgn" alt="icono Linkedin"></a>
+        <a href="https://github.com/AllanSPetersen" target="_blank" rel="noopener noreferrer"><img src="./img/github.png" class="pgn" alt="icono GitHub"></a>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+</html>
